@@ -25,7 +25,7 @@ const GifProvider = ({ children }) => {
     }, [])
 
 
-    const gf = new GiphyFetch(import.meta.env.VITE_GIPHY_KEY)
+    const gf = new GiphyFetch("ejKNT75hGrywmo1NC3Gou4MzwLvfKziK")
     return <GifContext.Provider value={{ gf, gifs, setGifs, filter, setFilter, favorites, addToFavorites }}>{children}</GifContext.Provider>
 }
 export const GifState = () => {
